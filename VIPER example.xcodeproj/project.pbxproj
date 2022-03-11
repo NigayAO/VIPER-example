@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		1D02867527DB634E000DEC35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02867427DB634E000DEC35 /* AppDelegate.swift */; };
 		1D02867727DB634E000DEC35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02867627DB634E000DEC35 /* SceneDelegate.swift */; };
-		1D02867927DB634E000DEC35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02867827DB634E000DEC35 /* ViewController.swift */; };
+		1D02867927DB634E000DEC35 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02867827DB634E000DEC35 /* GreetingViewController.swift */; };
 		1D02867C27DB634E000DEC35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D02867A27DB634E000DEC35 /* Main.storyboard */; };
 		1D02867E27DB634E000DEC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D02867D27DB634E000DEC35 /* Assets.xcassets */; };
 		1D02868127DB634E000DEC35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D02867F27DB634E000DEC35 /* LaunchScreen.storyboard */; };
+		1D58E0EF27DB63CA009F0768 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58E0EE27DB63CA009F0768 /* Person.swift */; };
+		1D58E0F227DB64BB009F0768 /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58E0F127DB64BB009F0768 /* GreetingPresenter.swift */; };
+		1D58E0F427DB64C4009F0768 /* GreetingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58E0F327DB64C4009F0768 /* GreetingInteractor.swift */; };
+		1D58E0F627DB64DB009F0768 /* GreetingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58E0F527DB64DB009F0768 /* GreetingConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D02867127DB634E000DEC35 /* VIPER example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D02867427DB634E000DEC35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D02867627DB634E000DEC35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D02867827DB634E000DEC35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D02867827DB634E000DEC35 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		1D02867B27DB634E000DEC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D02867D27DB634E000DEC35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D02868027DB634E000DEC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D02868227DB634E000DEC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D58E0EE27DB63CA009F0768 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		1D58E0F127DB64BB009F0768 /* GreetingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
+		1D58E0F327DB64C4009F0768 /* GreetingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingInteractor.swift; sourceTree = "<group>"; };
+		1D58E0F527DB64DB009F0768 /* GreetingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		1D02867327DB634E000DEC35 /* VIPER example */ = {
 			isa = PBXGroup;
 			children = (
+				1D58E0F027DB648C009F0768 /* Greeting */,
 				1D02867427DB634E000DEC35 /* AppDelegate.swift */,
 				1D02867627DB634E000DEC35 /* SceneDelegate.swift */,
-				1D02867827DB634E000DEC35 /* ViewController.swift */,
 				1D02867A27DB634E000DEC35 /* Main.storyboard */,
+				1D58E0EE27DB63CA009F0768 /* Person.swift */,
 				1D02867D27DB634E000DEC35 /* Assets.xcassets */,
 				1D02867F27DB634E000DEC35 /* LaunchScreen.storyboard */,
 				1D02868227DB634E000DEC35 /* Info.plist */,
 			);
 			path = "VIPER example";
+			sourceTree = "<group>";
+		};
+		1D58E0F027DB648C009F0768 /* Greeting */ = {
+			isa = PBXGroup;
+			children = (
+				1D02867827DB634E000DEC35 /* GreetingViewController.swift */,
+				1D58E0F127DB64BB009F0768 /* GreetingPresenter.swift */,
+				1D58E0F327DB64C4009F0768 /* GreetingInteractor.swift */,
+				1D58E0F527DB64DB009F0768 /* GreetingConfigurator.swift */,
+			);
+			path = Greeting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D02867927DB634E000DEC35 /* ViewController.swift in Sources */,
+				1D02867927DB634E000DEC35 /* GreetingViewController.swift in Sources */,
+				1D58E0F427DB64C4009F0768 /* GreetingInteractor.swift in Sources */,
+				1D58E0F627DB64DB009F0768 /* GreetingConfigurator.swift in Sources */,
+				1D58E0F227DB64BB009F0768 /* GreetingPresenter.swift in Sources */,
 				1D02867527DB634E000DEC35 /* AppDelegate.swift in Sources */,
+				1D58E0EF27DB63CA009F0768 /* Person.swift in Sources */,
 				1D02867727DB634E000DEC35 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
